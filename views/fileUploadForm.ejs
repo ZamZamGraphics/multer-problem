@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <title>Form Upload</title>
+  </head>
+  <body>
+    <div class="container-sm mt-5 border border-solid rounded-4">
+      <h1 class="mt-5 text-center">File Upload Form</h1>
+      <form
+        class="p-5"
+        action="/upload"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <div class="mb-3">
+          <label for="username" class="form-label">Some text</label>
+          <input
+            type="text"
+            name="username"
+            class="form-control"
+            id="username"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="formFile" class="form-label"
+            >Default file input example</label
+          >
+          <input class="form-control" type="file" id="formFile" name="avatar" />
+        </div>
+        <input type="submit" class="btn btn-primary" value="Submit" />
+      </form>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
